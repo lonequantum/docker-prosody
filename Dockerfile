@@ -19,6 +19,7 @@ RUN    apk update \
        make \
        openssl \
        openssl-dev \
+       readline-dev \
        unbound-dev \
     && curl -O https://prosody.im/downloads/source/prosody-${PROSODY_VER}.tar.gz \
     && tar -xzf prosody-${PROSODY_VER}.tar.gz \
@@ -44,6 +45,7 @@ RUN    apk update \
        lua-dev \
        make \
        openssl-dev \
+       readline-dev \
        unbound-dev \
     && rm -rf /prosody-* \
        /var/cache/apk/* \
