@@ -24,6 +24,7 @@ RUN    apk update \
     && tar -xzf prosody-${PROSODY_VER}.tar.gz \
     && cd /usr/bin \
     && for e in luarocks-*; do ln -s $e ${e%-*}; done \
+    && luarocks install readline \
     && luarocks install luaunbound \
     && luarocks install luasec \
     && luarocks install luabitop \
