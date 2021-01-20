@@ -50,9 +50,7 @@ RUN    apk update \
     && rm -rf /prosody-* \
        /var/cache/apk/* \
     && adduser -S prosody \
-    && addgroup -S prosody \
-    && cd /usr/local
+    && addgroup -S prosody
 
 EXPOSE 5222
 EXPOSE 5269
-
