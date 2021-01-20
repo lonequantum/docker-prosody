@@ -51,8 +51,7 @@ RUN    apk update \
        /var/cache/apk/* \
     && adduser -S prosody \
     && addgroup -S prosody \
-    && cd /usr/local \
-    && mv etc/prosody/prosody.cfg.lua share/prosody.cfg.lua.dist
+    && cd /usr/local
 
 EXPOSE 5222
 EXPOSE 5269
